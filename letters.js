@@ -158,10 +158,10 @@ window.LETTERS=[
   {t:"Oxirida",w:"حلم",i:2,h:"Oxirida: hilm (tush)",p:"Oldingi harfdan ulanib tugaydi."}
  ]},
  {id:"nun",ar:"ن",name:"Nun",forms:[
-  {t:"Yakka",w:"ن",i:0,h:"Yakka nun",p:"Tepasiga bitta nuqta qo'yiladi. Yozish tartibi uchun «▶ Yordam»ni bosing."},
-  {t:"Boshida",w:"نجم",i:0,h:"Boshida: najm (yulduz)",p:"Keyingi harfga ulanadi. Nuqtani harfni yozib bo'lgach qo'ying."},
-  {t:"O'rtasida",w:"عنب",i:1,h:"O'rtasida: inab (uzum)",p:"Ikki tomondan ulanadi. Nuqtani harfni yozib bo'lgach qo'ying."},
-  {t:"Oxirida",w:"لبن",i:2,h:"Oxirida: laban (sut)",p:"Oldingi harfdan ulanib tugaydi. Nuqtani harfni yozib bo'lgach qo'ying."}
+  {t:"Yakka",w:"ن",x:"ن",i:0,h:"Yakka nun",p:"Tepasiga bitta nuqta qo'yiladi. Yozish tartibi uchun «▶ Yordam»ni bosing.",s:[[[0.9,0.24],[0.94,0.42],[0.9,0.6],[0.78,0.75],[0.6,0.84],[0.4,0.9],[0.22,0.86],[0.12,0.72],[0.08,0.52]],[[0.449,0.12]]]},
+  {t:"Boshida",w:"نـ",x:"نجم",i:0,h:"Boshida: najm (yulduz)",p:"Keyingi harfga ulanadi. Nuqtani harfni yozib bo'lgach qo'ying.",s:[[[0.94,0.363],[0.93,0.652],[0.88,0.817],[0.74,0.879],[0.5,0.899],[0.25,0.899],[0.02,0.899]],[[0.794,0.126]]]},
+  {t:"O'rtasida",w:"ـنـ",x:"عنب",i:1,h:"O'rtasida: inab (uzum)",p:"Ikki tomondan ulanadi. Nuqtani harfni yozib bo'lgach qo'ying.",s:[[[1.0,0.882],[0.84,0.882],[0.7,0.833],[0.63,0.675],[0.61,0.527],[0.57,0.675],[0.53,0.833],[0.4,0.892],[0.2,0.882],[0.0,0.882]],[[0.512,0.156]]]},
+  {t:"Oxirida",w:"ـن",x:"لبن",i:2,h:"Oxirida: laban (sut)",p:"Oldingi harfdan ulanib tugaydi. Nuqtani harfni yozib bo'lgach qo'ying.",s:[[[1.0,0.5],[0.78,0.5],[0.64,0.46],[0.6,0.3],[0.58,0.22],[0.55,0.38],[0.52,0.58],[0.5,0.75],[0.38,0.88],[0.22,0.89],[0.1,0.76],[0.07,0.5]],[[0.291,0.12]]]}
  ]},
  {id:"he",ar:"ه",name:"He",forms:[
   {t:"Yakka",w:"ه",i:0,h:"Yakka he",p:"Yozish tartibi uchun «▶ Yordam»ni bosing."},
