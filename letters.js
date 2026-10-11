@@ -110,52 +110,52 @@ window.LETTERS=[
   {t:"Oxirida",w:"ـط",x:"وسط",i:2,h:"Oxirida: vasat (o'rta)",p:"Oldingi harfdan ulanib tugaydi. (Yordamdagi yozish tartibi taxminiy.)",s:[[[1.0,0.9],[0.9,0.9],[0.78,0.84]],[[0.3,0.66],[0.4,0.53],[0.5,0.47],[0.6,0.5],[0.69,0.6],[0.71,0.74],[0.64,0.86],[0.5,0.92],[0.3,0.93],[0.15,0.9],[0.05,0.82]],[[0.27,0.05],[0.23,0.3],[0.26,0.5],[0.29,0.68]]]}
  ]},
  {id:"zo",ar:"ظ",name:"Zo",forms:[
-  {t:"Yakka",w:"ظ",i:0,h:"Yakka zo",p:"Tepasiga bitta nuqta qo'yiladi. ظ ning shakli ط bilan bir xil, faqat nuqtasi boshqacha. Yozish tartibi uchun «▶ Yordam»ni bosing."},
-  {t:"Boshida",w:"ظهر",i:0,h:"Boshida: zuhr (tush payti)",p:"Keyingi harfga ulanadi. Nuqtani harfni yozib bo'lgach qo'ying."},
-  {t:"O'rtasida",w:"نظر",i:1,h:"O'rtasida: nazar (nazar)",p:"Ikki tomondan ulanadi. Nuqtani harfni yozib bo'lgach qo'ying."},
-  {t:"Oxirida",w:"حفظ",i:2,h:"Oxirida: hifz (yodlash)",p:"Oldingi harfdan ulanib tugaydi. Nuqtani harfni yozib bo'lgach qo'ying."}
+  {t:"Yakka",w:"ظ",x:"ظ",i:0,h:"Yakka zo",p:"Tepasiga bitta nuqta qo'yiladi. ظ ning shakli ط bilan bir xil, faqat nuqtasi boshqacha. Yozish tartibi uchun «▶ Yordam»ni bosing.",s:[[[0.38,0.66],[0.5,0.52],[0.7,0.5],[0.85,0.55],[0.95,0.63],[0.9,0.78],[0.75,0.88],[0.55,0.93],[0.35,0.93],[0.2,0.9],[0.1,0.85],[0.04,0.82]],[[0.3,0.04],[0.26,0.3],[0.29,0.5],[0.33,0.7]],[[0.672,0.187]]]},
+  {t:"Boshida",w:"ظـ",x:"ظهر",i:0,h:"Boshida: zuhr (tush payti)",p:"Keyingi harfga ulanadi. Nuqtani harfni yozib bo'lgach qo'ying. (Yordamdagi yozish tartibi taxminiy.)",s:[[[0.45,0.66],[0.55,0.52],[0.7,0.47],[0.85,0.52],[0.95,0.63],[0.88,0.78],[0.72,0.88],[0.5,0.92],[0.3,0.91],[0.0,0.91]],[[0.43,0.04],[0.43,0.3],[0.44,0.5],[0.45,0.7]],[[0.729,0.174]]]},
+  {t:"O'rtasida",w:"ـظـ",x:"نظر",i:1,h:"O'rtasida: nazar (nazar)",p:"Ikki tomondan ulanadi. Nuqtani harfni yozib bo'lgach qo'ying. (Yordamdagi yozish tartibi taxminiy.)",s:[[[1.0,0.91],[0.85,0.9],[0.76,0.82]],[[0.38,0.66],[0.47,0.52],[0.57,0.45],[0.66,0.5],[0.71,0.62],[0.66,0.78],[0.58,0.88],[0.45,0.91],[0.3,0.9],[0.0,0.91]],[[0.3,0.04],[0.27,0.3],[0.3,0.5],[0.33,0.7]],[[0.551,0.174]]]},
+  {t:"Oxirida",w:"ـظ",x:"حفظ",i:2,h:"Oxirida: hifz (yodlash)",p:"Oldingi harfdan ulanib tugaydi. Nuqtani harfni yozib bo'lgach qo'ying. (Yordamdagi yozish tartibi taxminiy.)",s:[[[1.0,0.9],[0.9,0.9],[0.78,0.84]],[[0.3,0.66],[0.4,0.53],[0.5,0.47],[0.6,0.5],[0.69,0.6],[0.71,0.74],[0.64,0.86],[0.5,0.92],[0.3,0.93],[0.15,0.9],[0.05,0.82]],[[0.27,0.05],[0.23,0.3],[0.26,0.5],[0.29,0.68]],[[0.465,0.187]]]}
  ]},
  {id:"ayn",ar:"ع",name:"Ayn",forms:[
-  {t:"Yakka",w:"ع",i:0,h:"Yakka ayn",p:"Yozish tartibi uchun «▶ Yordam»ni bosing."},
-  {t:"Boshida",w:"عين",i:0,h:"Boshida: ayn (ko'z)",p:"Keyingi harfga ulanadi."},
-  {t:"O'rtasida",w:"بعد",i:1,h:"O'rtasida: ba'd (keyin)",p:"Ikki tomondan ulanadi."},
-  {t:"Oxirida",w:"سبع",i:2,h:"Oxirida: sab' (yetti)",p:"Oldingi harfdan ulanib tugaydi."}
+  {t:"Yakka",w:"ع",x:"ع",i:0,h:"Yakka ayn",p:"Yozish tartibi uchun «▶ Yordam»ni bosing.",s:[[[0.58,0.12],[0.4,0.06],[0.22,0.08],[0.1,0.2],[0.12,0.32],[0.25,0.38],[0.4,0.37]],[[0.74,0.27],[0.6,0.32],[0.4,0.42],[0.25,0.47],[0.12,0.58],[0.1,0.72],[0.2,0.85],[0.4,0.92],[0.6,0.92],[0.8,0.88],[0.96,0.83]]]},
+  {t:"Boshida",w:"عـ",x:"عين",i:0,h:"Boshida: ayn (ko'z)",p:"Keyingi harfga ulanadi. (Yordamdagi yozish tartibi taxminiy.)",s:[[[0.82,0.3],[0.78,0.12],[0.65,0.04],[0.55,0.12],[0.5,0.3],[0.48,0.5],[0.5,0.62]],[[0.96,0.62],[0.9,0.74],[0.78,0.82],[0.62,0.86],[0.5,0.88],[0.35,0.87],[0.0,0.85]]]},
+  {t:"O'rtasida",w:"ـعـ",x:"بعد",i:1,h:"O'rtasida: ba'd (keyin)",p:"Ikki tomondan ulanadi. (Yordamdagi yozish tartibi taxminiy.)",s:[[[1.0,0.85],[0.85,0.85],[0.74,0.8]],[[0.7,0.68],[0.7,0.42],[0.62,0.15],[0.5,0.04],[0.38,0.1],[0.32,0.25],[0.36,0.4],[0.45,0.5],[0.52,0.65],[0.48,0.82],[0.3,0.85],[0.0,0.85]]]},
+  {t:"Oxirida",w:"ـع",x:"سبع",i:2,h:"Oxirida: sab' (yetti)",p:"Oldingi harfdan ulanib tugaydi. (Yordamdagi yozish tartibi taxminiy.)",s:[[[1.0,0.48],[0.8,0.48],[0.6,0.5]],[[0.68,0.4],[0.62,0.15],[0.45,0.04],[0.25,0.06],[0.12,0.2],[0.2,0.28]],[[0.55,0.47],[0.38,0.43],[0.24,0.5],[0.12,0.65],[0.14,0.8],[0.3,0.92],[0.5,0.93],[0.7,0.88],[0.8,0.82]]]}
  ]},
  {id:"gayn",ar:"غ",name:"G'ayn",forms:[
-  {t:"Yakka",w:"غ",i:0,h:"Yakka g'ayn",p:"Tepasiga bitta nuqta qo'yiladi. غ ning shakli ع bilan bir xil, faqat nuqtasi boshqacha. Yozish tartibi uchun «▶ Yordam»ni bosing."},
-  {t:"Boshida",w:"غرب",i:0,h:"Boshida: g'arb (g'arb)",p:"Keyingi harfga ulanadi. Nuqtani harfni yozib bo'lgach qo'ying."},
-  {t:"O'rtasida",w:"بغل",i:1,h:"O'rtasida: bag'l (xachir)",p:"Ikki tomondan ulanadi. Nuqtani harfni yozib bo'lgach qo'ying."},
-  {t:"Oxirida",w:"صبغ",i:2,h:"Oxirida: sibg' (bo'yoq)",p:"Oldingi harfdan ulanib tugaydi. Nuqtani harfni yozib bo'lgach qo'ying."}
+  {t:"Yakka",w:"غ",x:"غ",i:0,h:"Yakka g'ayn",p:"Tepasiga bitta nuqta qo'yiladi. غ ning shakli ع bilan bir xil, faqat nuqtasi boshqacha. Yozish tartibi uchun «▶ Yordam»ni bosing.",s:[[[0.58,0.312],[0.4,0.265],[0.22,0.28],[0.1,0.374],[0.12,0.468],[0.25,0.515],[0.4,0.507]],[[0.74,0.429],[0.6,0.468],[0.4,0.546],[0.25,0.585],[0.12,0.671],[0.1,0.781],[0.2,0.883],[0.4,0.937],[0.6,0.937],[0.8,0.906],[0.96,0.867]],[[0.295,0.079]]]},
+  {t:"Boshida",w:"غـ",x:"غرب",i:0,h:"Boshida: g'arb (g'arb)",p:"Keyingi harfga ulanadi. Nuqtani harfni yozib bo'lgach qo'ying. (Yordamdagi yozish tartibi taxminiy.)",s:[[[0.82,0.557],[0.78,0.443],[0.65,0.392],[0.55,0.443],[0.5,0.557],[0.48,0.683],[0.5,0.759]],[[0.96,0.759],[0.9,0.835],[0.78,0.886],[0.62,0.911],[0.5,0.924],[0.35,0.918],[0.0,0.905]],[[0.62,0.125]]]},
+  {t:"O'rtasida",w:"ـغـ",x:"بغل",i:1,h:"O'rtasida: bag'l (xachir)",p:"Ikki tomondan ulanadi. Nuqtani harfni yozib bo'lgach qo'ying. (Yordamdagi yozish tartibi taxminiy.)",s:[[[1.0,0.902],[0.85,0.902],[0.74,0.869]],[[0.7,0.79],[0.7,0.62],[0.62,0.442],[0.5,0.37],[0.38,0.41],[0.32,0.508],[0.36,0.606],[0.45,0.672],[0.52,0.77],[0.48,0.882],[0.3,0.902],[0.0,0.902]],[[0.51,0.125]]]},
+  {t:"Oxirida",w:"ـغ",x:"صبغ",i:2,h:"Oxirida: sibg' (bo'yoq)",p:"Oldingi harfdan ulanib tugaydi. Nuqtani harfni yozib bo'lgach qo'ying. (Yordamdagi yozish tartibi taxminiy.)",s:[[[1.0,0.599],[0.8,0.599],[0.6,0.615]],[[0.68,0.538],[0.62,0.345],[0.45,0.26],[0.25,0.276],[0.12,0.384],[0.2,0.445]],[[0.55,0.592],[0.38,0.561],[0.24,0.615],[0.12,0.73],[0.14,0.846],[0.3,0.938],[0.5,0.946],[0.7,0.908],[0.8,0.861]],[[0.317,0.084]]]}
  ]},
  {id:"fa",ar:"ف",name:"Fa",forms:[
-  {t:"Yakka",w:"ف",i:0,h:"Yakka fa",p:"Tepasiga bitta nuqta qo'yiladi. Yozish tartibi uchun «▶ Yordam»ni bosing."},
-  {t:"Boshida",w:"فيل",i:0,h:"Boshida: fil (fil)",p:"Keyingi harfga ulanadi. Nuqtani harfni yozib bo'lgach qo'ying."},
-  {t:"O'rtasida",w:"صفر",i:1,h:"O'rtasida: sifr (nol)",p:"Ikki tomondan ulanadi. Nuqtani harfni yozib bo'lgach qo'ying."},
-  {t:"Oxirida",w:"سيف",i:2,h:"Oxirida: sayf (qilich)",p:"Oldingi harfdan ulanib tugaydi. Nuqtani harfni yozib bo'lgach qo'ying."}
+  {t:"Yakka",w:"ف",x:"ف",i:0,h:"Yakka fa",p:"Tepasiga bitta nuqta qo'yiladi. Yozish tartibi uchun «▶ Yordam»ni bosing.",s:[[[0.58,0.58],[0.6,0.42],[0.72,0.34],[0.85,0.38],[0.93,0.52],[0.93,0.68],[0.88,0.75],[0.75,0.84],[0.5,0.9],[0.3,0.93],[0.15,0.88],[0.07,0.75],[0.05,0.6]],[[0.753,0.105]]]},
+  {t:"Boshida",w:"فـ",x:"فيل",i:0,h:"Boshida: fil (fil)",p:"Keyingi harfga ulanadi. Nuqtani harfni yozib bo'lgach qo'ying. (Yordamdagi yozish tartibi taxminiy.)",s:[[[0.62,0.58],[0.65,0.42],[0.77,0.36],[0.9,0.42],[0.94,0.6],[0.93,0.78],[0.82,0.86],[0.6,0.9],[0.4,0.91],[0.0,0.91]],[[0.736,0.118]]]},
+  {t:"O'rtasida",w:"ـفـ",x:"صفر",i:1,h:"O'rtasida: sifr (nol)",p:"Ikki tomondan ulanadi. Nuqtani harfni yozib bo'lgach qo'ying. (Yordamdagi yozish tartibi taxminiy.)",s:[[[1.0,0.91],[0.85,0.91],[0.7,0.88]],[[0.36,0.78],[0.35,0.58],[0.42,0.45],[0.52,0.42],[0.6,0.5],[0.63,0.65],[0.58,0.8],[0.5,0.88],[0.4,0.9],[0.0,0.91]],[[0.53,0.125]]]},
+  {t:"Oxirida",w:"ـف",x:"سيف",i:2,h:"Oxirida: sayf (qilich)",p:"Oldingi harfdan ulanib tugaydi. Nuqtani harfni yozib bo'lgach qo'ying. (Yordamdagi yozish tartibi taxminiy.)",s:[[[1.0,0.89],[0.85,0.89],[0.72,0.86]],[[0.4,0.7],[0.4,0.5],[0.47,0.42],[0.55,0.42],[0.62,0.5],[0.66,0.65],[0.62,0.8],[0.52,0.9],[0.38,0.91],[0.22,0.9],[0.12,0.8],[0.07,0.65],[0.07,0.52]],[[0.58,0.123]]]}
  ]},
  {id:"qof",ar:"ق",name:"Qof",forms:[
-  {t:"Yakka",w:"ق",i:0,h:"Yakka qof",p:"Tepasiga ikkita nuqta qo'yiladi. Yozish tartibi uchun «▶ Yordam»ni bosing."},
-  {t:"Boshida",w:"قمر",i:0,h:"Boshida: qamar (oy)",p:"Keyingi harfga ulanadi. Nuqtalarni harfni yozib bo'lgach qo'ying."},
-  {t:"O'rtasida",w:"بقر",i:1,h:"O'rtasida: baqar (sigir)",p:"Ikki tomondan ulanadi. Nuqtalarni harfni yozib bo'lgach qo'ying."},
-  {t:"Oxirida",w:"عشق",i:2,h:"Oxirida: ishq (ishq)",p:"Oldingi harfdan ulanib tugaydi. Nuqtalarni harfni yozib bo'lgach qo'ying."}
+  {t:"Yakka",w:"ق",x:"ق",i:0,h:"Yakka qof",p:"Tepasiga ikkita nuqta qo'yiladi. Yozish tartibi uchun «▶ Yordam»ni bosing.",s:[[[0.22,0.56],[0.24,0.42],[0.38,0.33],[0.55,0.3],[0.72,0.32],[0.86,0.42],[0.94,0.56],[0.92,0.68],[0.8,0.8],[0.6,0.9],[0.35,0.95],[0.2,0.9],[0.1,0.78],[0.07,0.62]],[[0.755,0.083]],[[0.511,0.105]]]},
+  {t:"Boshida",w:"قـ",x:"قمر",i:0,h:"Boshida: qamar (oy)",p:"Keyingi harfga ulanadi. Nuqtalarni harfni yozib bo'lgach qo'ying. (Yordamdagi yozish tartibi taxminiy.)",s:[[[0.62,0.564],[0.65,0.397],[0.77,0.335],[0.9,0.397],[0.94,0.584],[0.93,0.771],[0.82,0.855],[0.6,0.896],[0.4,0.906],[0.0,0.906]],[[0.832,0.109]],[[0.614,0.137]]]},
+  {t:"O'rtasida",w:"ـقـ",x:"بقر",i:1,h:"O'rtasida: baqar (sigir)",p:"Ikki tomondan ulanadi. Nuqtalarni harfni yozib bo'lgach qo'ying. (Yordamdagi yozish tartibi taxminiy.)",s:[[[1.0,0.906],[0.85,0.906],[0.7,0.875]],[[0.36,0.771],[0.35,0.562],[0.42,0.427],[0.52,0.396],[0.6,0.479],[0.63,0.635],[0.58,0.792],[0.5,0.875],[0.4,0.896],[0.0,0.906]],[[0.598,0.115]],[[0.444,0.145]]]},
+  {t:"Oxirida",w:"ـق",x:"عشق",i:2,h:"Oxirida: ishq (ishq)",p:"Oldingi harfdan ulanib tugaydi. Nuqtalarni harfni yozib bo'lgach qo'ying. (Yordamdagi yozish tartibi taxminiy.)",s:[[[1.0,0.62],[0.85,0.62],[0.72,0.6]],[[0.3,0.48],[0.33,0.36],[0.42,0.28],[0.55,0.3],[0.62,0.4],[0.66,0.55],[0.62,0.72],[0.5,0.85],[0.35,0.93],[0.2,0.9],[0.1,0.78],[0.07,0.62]],[[0.517,0.082]],[[0.35,0.102]]]}
  ]},
  {id:"kof",ar:"ك",name:"Kof",forms:[
-  {t:"Yakka",w:"ك",i:0,h:"Yakka kof",p:"Yozish tartibi uchun «▶ Yordam»ni bosing."},
-  {t:"Boshida",w:"كلب",i:0,h:"Boshida: kalb (it)",p:"Keyingi harfga ulanadi."},
-  {t:"O'rtasida",w:"سكر",i:1,h:"O'rtasida: sukkar (shakar)",p:"Ikki tomondan ulanadi."},
-  {t:"Oxirida",w:"ملك",i:2,h:"Oxirida: malik (podshoh)",p:"Oldingi harfdan ulanib tugaydi."}
+  {t:"Yakka",w:"ك",x:"ك",i:0,h:"Yakka kof",p:"Yozish tartibi uchun «▶ Yordam»ni bosing.",s:[[[0.8,0.06],[0.83,0.25],[0.88,0.45],[0.93,0.65],[0.9,0.8],[0.7,0.87],[0.4,0.9],[0.2,0.91],[0.05,0.92]],[[0.33,0.63],[0.45,0.6],[0.53,0.55],[0.45,0.5],[0.38,0.45],[0.43,0.4]]]},
+  {t:"Boshida",w:"كـ",x:"كلب",i:0,h:"Boshida: kalb (it)",p:"Keyingi harfga ulanadi. (Yordamdagi yozish tartibi taxminiy.)",s:[[[0.96,0.06],[0.75,0.15],[0.55,0.24],[0.42,0.35],[0.45,0.5],[0.6,0.55],[0.72,0.65],[0.78,0.78],[0.68,0.88],[0.5,0.91],[0.3,0.91],[0.0,0.91]]]},
+  {t:"O'rtasida",w:"ـكـ",x:"سكر",i:1,h:"O'rtasida: sukkar (shakar)",p:"Ikki tomondan ulanadi. (Yordamdagi yozish tartibi taxminiy.)",s:[[[0.7,0.06],[0.55,0.15],[0.4,0.25],[0.31,0.35],[0.36,0.45],[0.48,0.55],[0.57,0.68],[0.6,0.8]],[[1.0,0.91],[0.8,0.9],[0.62,0.85],[0.5,0.88],[0.3,0.9],[0.0,0.91]]]},
+  {t:"Oxirida",w:"ـك",x:"ملك",i:2,h:"Oxirida: malik (podshoh)",p:"Oldingi harfdan ulanib tugaydi. (Yordamdagi yozish tartibi taxminiy.)",s:[[[0.58,0.06],[0.57,0.3],[0.58,0.55],[0.6,0.78]],[[1.0,0.9],[0.8,0.9],[0.62,0.88],[0.5,0.9],[0.3,0.9],[0.15,0.88],[0.08,0.8],[0.07,0.65]],[[0.26,0.65],[0.33,0.62],[0.38,0.57],[0.33,0.5],[0.3,0.45],[0.35,0.41]]]}
  ]},
  {id:"lam",ar:"ل",name:"Lam",forms:[
-  {t:"Yakka",w:"ل",i:0,h:"Yakka lam",p:"Yozish tartibi uchun «▶ Yordam»ni bosing."},
-  {t:"Boshida",w:"لحم",i:0,h:"Boshida: lahm (go'sht)",p:"Keyingi harfga ulanadi."},
-  {t:"O'rtasida",w:"قلم",i:1,h:"O'rtasida: qalam (qalam)",p:"Ikki tomondan ulanadi."},
-  {t:"Oxirida",w:"نمل",i:2,h:"Oxirida: naml (chumoli)",p:"Oldingi harfdan ulanib tugaydi."}
+  {t:"Yakka",w:"ل",x:"ل",i:0,h:"Yakka lam",p:"Yozish tartibi uchun «▶ Yordam»ni bosing.",s:[[[0.78,0.06],[0.82,0.25],[0.88,0.45],[0.93,0.62],[0.92,0.75],[0.82,0.85],[0.6,0.9],[0.4,0.93],[0.22,0.9],[0.1,0.85],[0.06,0.74],[0.07,0.65]]]},
+  {t:"Boshida",w:"لـ",x:"لحم",i:0,h:"Boshida: lahm (go'sht)",p:"Keyingi harfga ulanadi. (Yordamdagi yozish tartibi taxminiy.)",s:[[[0.85,0.05],[0.87,0.3],[0.9,0.55],[0.95,0.72],[0.88,0.84],[0.7,0.9],[0.4,0.91],[0.0,0.91]]]},
+  {t:"O'rtasida",w:"ـلـ",x:"قلم",i:1,h:"O'rtasida: qalam (qalam)",p:"Ikki tomondan ulanadi. (Yordamdagi yozish tartibi taxminiy.)",s:[[[0.5,0.03],[0.47,0.3],[0.49,0.6],[0.52,0.82]],[[1.0,0.91],[0.75,0.9],[0.55,0.86],[0.45,0.9],[0.2,0.91],[0.0,0.91]]]},
+  {t:"Oxirida",w:"ـل",x:"نمل",i:2,h:"Oxirida: naml (chumoli)",p:"Oldingi harfdan ulanib tugaydi. (Yordamdagi yozish tartibi taxminiy.)",s:[[[0.52,0.06],[0.55,0.25],[0.58,0.45],[0.6,0.62],[0.58,0.75]],[[1.0,0.65],[0.8,0.65],[0.64,0.68],[0.55,0.82],[0.4,0.9],[0.25,0.93],[0.12,0.88],[0.05,0.78],[0.07,0.66]]]}
  ]},
  {id:"mim",ar:"م",name:"Mim",forms:[
-  {t:"Yakka",w:"م",i:0,h:"Yakka mim",p:"Yozish tartibi uchun «▶ Yordam»ni bosing."},
-  {t:"Boshida",w:"ملح",i:0,h:"Boshida: milh (tuz)",p:"Keyingi harfga ulanadi."},
-  {t:"O'rtasida",w:"نمر",i:1,h:"O'rtasida: namir (bars)",p:"Ikki tomondan ulanadi."},
-  {t:"Oxirida",w:"حلم",i:2,h:"Oxirida: hilm (tush)",p:"Oldingi harfdan ulanib tugaydi."}
+  {t:"Yakka",w:"م",x:"م",i:0,h:"Yakka mim",p:"Yozish tartibi uchun «▶ Yordam»ni bosing.",s:[[[0.2,0.25],[0.32,0.12],[0.46,0.05],[0.6,0.12],[0.72,0.26],[0.9,0.33],[0.8,0.4],[0.55,0.43],[0.3,0.44],[0.15,0.47],[0.12,0.6],[0.14,0.78],[0.17,0.92]]]},
+  {t:"Boshida",w:"مـ",x:"ملح",i:0,h:"Boshida: milh (tuz)",p:"Keyingi harfga ulanadi. (Yordamdagi yozish tartibi taxminiy.)",s:[[[0.5,0.62],[0.6,0.35],[0.68,0.12],[0.77,0.04],[0.88,0.2],[0.95,0.45],[0.93,0.75],[0.82,0.9],[0.68,0.88],[0.55,0.86],[0.45,0.82],[0.3,0.81],[0.0,0.81]]]},
+  {t:"O'rtasida",w:"ـمـ",x:"نمر",i:1,h:"O'rtasida: namir (bars)",p:"Ikki tomondan ulanadi. (Yordamdagi yozish tartibi taxminiy.)",s:[[[1.0,0.81],[0.85,0.81],[0.76,0.78]],[[0.38,0.6],[0.42,0.35],[0.48,0.12],[0.53,0.04],[0.6,0.2],[0.66,0.45],[0.7,0.7],[0.66,0.85],[0.55,0.9],[0.45,0.85],[0.38,0.8],[0.25,0.81],[0.0,0.81]]]},
+  {t:"Oxirida",w:"ـم",x:"حلم",i:2,h:"Oxirida: hilm (tush)",p:"Oldingi harfdan ulanib tugaydi. (Yordamdagi yozish tartibi taxminiy.)",s:[[[1.0,0.44],[0.85,0.44],[0.72,0.44]],[[0.13,0.26],[0.3,0.1],[0.45,0.04],[0.55,0.15],[0.6,0.3],[0.62,0.42],[0.5,0.47],[0.35,0.42],[0.2,0.4],[0.1,0.45],[0.08,0.6],[0.1,0.8],[0.12,0.92]]]}
  ]},
  {id:"nun",ar:"ن",name:"Nun",forms:[
   {t:"Yakka",w:"ن",x:"ن",i:0,h:"Yakka nun",p:"Tepasiga bitta nuqta qo'yiladi. Yozish tartibi uchun «▶ Yordam»ni bosing.",s:[[[0.9,0.24],[0.94,0.42],[0.9,0.6],[0.78,0.75],[0.6,0.84],[0.4,0.9],[0.22,0.86],[0.12,0.72],[0.08,0.52]],[[0.449,0.12]]]},
@@ -164,21 +164,21 @@ window.LETTERS=[
   {t:"Oxirida",w:"ـن",x:"لبن",i:2,h:"Oxirida: laban (sut)",p:"Oldingi harfdan ulanib tugaydi. Nuqtani harfni yozib bo'lgach qo'ying.",s:[[[1.0,0.5],[0.78,0.5],[0.64,0.46],[0.6,0.3],[0.58,0.22],[0.55,0.38],[0.52,0.58],[0.5,0.75],[0.38,0.88],[0.22,0.89],[0.1,0.76],[0.07,0.5]],[[0.291,0.12]]]}
  ]},
  {id:"he",ar:"ه",name:"He",forms:[
-  {t:"Yakka",w:"ه",i:0,h:"Yakka he",p:"Yozish tartibi uchun «▶ Yordam»ni bosing."},
-  {t:"Boshida",w:"هرم",i:0,h:"Boshida: haram (piramida)",p:"Keyingi harfga ulanadi."},
-  {t:"O'rtasida",w:"سهم",i:1,h:"O'rtasida: sahm (o'q)",p:"Ikki tomondan ulanadi."},
-  {t:"Oxirida",w:"وجه",i:2,h:"Oxirida: vajh (yuz)",p:"Oldingi harfdan ulanib tugaydi."}
+  {t:"Yakka",w:"ه",x:"ه",i:0,h:"Yakka he",p:"Yozish tartibi uchun «▶ Yordam»ni bosing. (Yordamdagi yozish tartibi taxminiy.)",s:[[[0.47,0.12],[0.3,0.22],[0.2,0.42],[0.25,0.6],[0.4,0.7],[0.55,0.62],[0.57,0.48],[0.48,0.4]],[[0.5,0.04],[0.7,0.15],[0.86,0.35],[0.93,0.6],[0.92,0.82],[0.8,0.92],[0.6,0.84],[0.45,0.8],[0.3,0.82],[0.15,0.84],[0.05,0.79]]]},
+  {t:"Boshida",w:"هـ",x:"هرم",i:0,h:"Boshida: haram (piramida)",p:"Keyingi harfga ulanadi. (Yordamdagi yozish tartibi taxminiy.)",s:[[[0.58,0.1],[0.45,0.25],[0.42,0.45],[0.48,0.62],[0.58,0.68],[0.63,0.55],[0.6,0.42]],[[0.62,0.04],[0.8,0.2],[0.92,0.45],[0.95,0.7],[0.92,0.92],[0.75,0.9],[0.58,0.84],[0.45,0.82],[0.3,0.84],[0.0,0.84]]]},
+  {t:"O'rtasida",w:"ـهـ",x:"سهم",i:1,h:"O'rtasida: sahm (o'q)",p:"Ikki tomondan ulanadi. (Yordamdagi yozish tartibi taxminiy.)",s:[[[1.0,0.59],[0.88,0.59],[0.78,0.57]],[[0.7,0.55],[0.72,0.35],[0.66,0.12],[0.58,0.04],[0.5,0.12],[0.42,0.3],[0.4,0.45],[0.48,0.5]],[[0.5,0.58],[0.38,0.7],[0.4,0.88],[0.52,0.96],[0.62,0.92],[0.67,0.8],[0.6,0.72],[0.5,0.72]],[[0.4,0.6],[0.2,0.59],[0.0,0.59]]]},
+  {t:"Oxirida",w:"ـه",x:"وجه",i:2,h:"Oxirida: vajh (yuz)",p:"Oldingi harfdan ulanib tugaydi. (Yordamdagi yozish tartibi taxminiy.)",s:[[[1.0,0.88],[0.85,0.88],[0.6,0.88]],[[0.48,0.08],[0.35,0.22],[0.2,0.38],[0.1,0.58],[0.12,0.75],[0.25,0.88],[0.42,0.9]]]}
  ]},
  {id:"vov",ar:"و",name:"Vov",forms:[
-  {t:"Yakka",w:"و",i:0,h:"Yakka vov",p:"Yozish tartibi uchun «▶ Yordam»ni bosing."},
-  {t:"Boshida",w:"ورد",i:0,h:"Boshida: vard (gul)",p:"Keyingi harfga ulanmaydi, yakka shaklga o'xshaydi."},
-  {t:"O'rtasida",w:"نور",i:1,h:"O'rtasida: nur (nur)",p:"Oldingi harfga ulanadi, keyingisiga ulanmaydi."},
-  {t:"Oxirida",w:"عفو",i:2,h:"Oxirida: afv (kechirim)",p:"Oldingi harfdan ulanib tugaydi."}
+  {t:"Yakka",w:"و",x:"و",i:0,h:"Yakka vov",p:"Yozish tartibi uchun «▶ Yordam»ni bosing.",s:[[[0.58,0.11],[0.4,0.13],[0.25,0.25],[0.15,0.4],[0.22,0.52],[0.4,0.58],[0.6,0.57],[0.8,0.52],[0.82,0.62],[0.7,0.78],[0.5,0.9],[0.3,0.92],[0.15,0.88],[0.05,0.82]]]},
+  {t:"Boshida",w:"و",x:"ورد",i:0,h:"Boshida: vard (gul)",p:"Keyingi harfga ulanmaydi, yakka shaklga o'xshaydi.",s:[[[0.58,0.11],[0.4,0.13],[0.25,0.25],[0.15,0.4],[0.22,0.52],[0.4,0.58],[0.6,0.57],[0.8,0.52],[0.82,0.62],[0.7,0.78],[0.5,0.9],[0.3,0.92],[0.15,0.88],[0.05,0.82]]]},
+  {t:"O'rtasida",w:"ـو",x:"نور",i:1,h:"O'rtasida: nur (nur)",p:"Oldingi harfga ulanadi, keyingisiga ulanmaydi. (Yordamdagi yozish tartibi taxminiy.)",s:[[[1.0,0.55],[0.85,0.55],[0.68,0.55]],[[0.38,0.08],[0.28,0.15],[0.2,0.3],[0.22,0.45],[0.35,0.56],[0.5,0.57],[0.58,0.62],[0.5,0.78],[0.35,0.92],[0.2,0.97],[0.08,0.9],[0.03,0.86]]]},
+  {t:"Oxirida",w:"ـو",x:"عفو",i:2,h:"Oxirida: afv (kechirim)",p:"Oldingi harfdan ulanib tugaydi. (Yordamdagi yozish tartibi taxminiy.)",s:[[[1.0,0.55],[0.85,0.55],[0.68,0.55]],[[0.38,0.08],[0.28,0.15],[0.2,0.3],[0.22,0.45],[0.35,0.56],[0.5,0.57],[0.58,0.62],[0.5,0.78],[0.35,0.92],[0.2,0.97],[0.08,0.9],[0.03,0.86]]]}
  ]},
  {id:"ya",ar:"ي",name:"Ya",forms:[
-  {t:"Yakka",w:"ي",i:0,h:"Yakka ya",p:"Pastiga ikkita nuqta qo'yiladi. Yozish tartibi uchun «▶ Yordam»ni bosing."},
-  {t:"Boshida",w:"يد",i:0,h:"Boshida: yad (qo'l)",p:"Keyingi harfga ulanadi. Nuqtalarni harfni yozib bo'lgach qo'ying."},
-  {t:"O'rtasida",w:"ليل",i:1,h:"O'rtasida: layl (tun)",p:"Ikki tomondan ulanadi. Nuqtalarni harfni yozib bo'lgach qo'ying."},
-  {t:"Oxirida",w:"علي",i:2,h:"Oxirida: Ali (ism)",p:"Oldingi harfdan ulanib tugaydi. Nuqtalarni harfni yozib bo'lgach qo'ying."}
+  {t:"Yakka",w:"ي",x:"ي",i:0,h:"Yakka ya",p:"Pastiga ikkita nuqta qo'yiladi. Yozish tartibi uchun «▶ Yordam»ni bosing.",s:[[[0.93,0.14],[0.82,0.07],[0.62,0.1],[0.45,0.2],[0.38,0.3],[0.5,0.37],[0.75,0.41],[0.93,0.47],[0.85,0.58],[0.6,0.66],[0.35,0.7],[0.18,0.66],[0.1,0.52],[0.1,0.4]],[[0.51,0.904]],[[0.267,0.926]]]},
+  {t:"Boshida",w:"يـ",x:"يد",i:0,h:"Boshida: yad (qo'l)",p:"Keyingi harfga ulanadi. Nuqtalarni harfni yozib bo'lgach qo'ying. (Yordamdagi yozish tartibi taxminiy.)",s:[[[0.818,0.021],[0.809,0.308],[0.766,0.472],[0.644,0.533],[0.435,0.554],[0.217,0.554],[0.017,0.554]],[[0.844,0.875]],[[0.596,0.904]]]},
+  {t:"O'rtasida",w:"ـيـ",x:"ليل",i:1,h:"O'rtasida: layl (tun)",p:"Ikki tomondan ulanadi. Nuqtalarni harfni yozib bo'lgach qo'ying. (Yordamdagi yozish tartibi taxminiy.)",s:[[[0.914,0.424],[0.768,0.424],[0.64,0.372],[0.576,0.207],[0.558,0.052],[0.521,0.207],[0.485,0.372],[0.366,0.434],[0.183,0.424],[0.0,0.424]],[[0.591,0.837]],[[0.427,0.874]]]},
+  {t:"Oxirida",w:"ـي",x:"علي",i:2,h:"Oxirida: Ali (ism)",p:"Oldingi harfdan ulanib tugaydi. Nuqtalarni harfni yozib bo'lgach qo'ying. (Yordamdagi yozish tartibi taxminiy.)",s:[[[1.0,0.13],[0.8,0.13],[0.6,0.12]],[[0.52,0.1],[0.55,0.25],[0.64,0.38],[0.66,0.43],[0.55,0.5],[0.4,0.57],[0.25,0.58],[0.12,0.48],[0.07,0.3],[0.07,0.12]],[[0.349,0.863]],[[0.194,0.895]]]}
  ]}
 ];
