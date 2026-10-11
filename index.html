@@ -76,7 +76,7 @@ var f=document.getElementById('f'),gc=g.getContext('2d'),fc=f.getContext('2d'),d
 var dpr=window.devicePixelRatio||1,FONT='"Noto Naskh Arabic",serif';
 function save(){store[L.id]=cnt;try{localStorage.setItem('harf-mashq',JSON.stringify(store))}catch(e){}}
 function setLetter(id,form){L=LETTERS.filter(function(x){return x.id===id})[0]||LETTERS[0];
- modes=L.forms.map(function(m){return{t:m.t,txt:m.w,h:m.h,p:m.p,html:Array.from(m.w).map(function(c,k){return k==m.i?'<b>'+c+'</b>':c}).join('')}});
+ modes=L.forms.map(function(m){return{t:m.t,txt:m.w,s:m.s,h:m.h,p:m.p,html:Array.from(m.x||m.w).map(function(c,k){return k==m.i?'<b>'+c+'</b>':c}).join('')}});
  cnt=store[L.id];if(!cnt||cnt.length!=modes.length)cnt=store[L.id]=modes.map(function(){return 0});
  document.getElementById('pa').textContent=L.ar;document.getElementById('pn').textContent=L.name;
  tabs.innerHTML='';tabs.style.gridTemplateColumns='repeat('+modes.length+',1fr)';
@@ -161,11 +161,18 @@ function skel(){var S=.5,w=Math.ceil(W*S),h=Math.ceil(H*S),N=w*h,A=mask(function
   c.mx=Math.max.apply(0,c.strokes[0].map(function(q){return q[0]}))});
  var byx=function(a,b){return b.mx-a.mx},bod=comps.filter(function(c){return c.size>=big*.2}).sort(byx),dts=comps.filter(function(c){return c.size<big*.2}).sort(byx);
  paths=[].concat.apply([],bod.concat(dts).map(function(c){return c.strokes})).map(function(pts){var cum=[0],k;for(k=1;k<pts.length;k++)cum.push(cum[k-1]+Math.hypot(pts[k][0]-pts[k-1][0],pts[k][1]-pts[k-1][1]));return{pts:pts,cum:cum}})}
+function cr(p){var n=p.length;if(n<3)return p;var o=[],i,t,k;for(i=0;i<n-1;i++){var a=p[Math.max(0,i-1)],b=p[i],c=p[i+1],d=p[Math.min(n-1,i+2)];
+ for(t=0;t<1;t+=.1){var t2=t*t,t3=t2*t,r=[];for(k=0;k<2;k++)r.push(.5*(2*b[k]+(-a[k]+c[k])*t+(2*a[k]-5*b[k]+4*c[k]-d[k])*t2+(-a[k]+3*b[k]-3*c[k]+d[k])*t3));o.push(r)}}o.push(p[n-1]);return o}
+function authored(){var s=modes[cur].s;if(!s)return null;var b=gb;
+ return s.map(function(st){var pts=cr(st.map(function(q){return[b.x0+q[0]*(b.x1-b.x0),b.y0+q[1]*(b.y1-b.y0)]})),cum=[0],k;
+  for(k=1;k<pts.length;k++)cum.push(cum[k-1]+Math.hypot(pts[k][0]-pts[k-1][0],pts[k][1]-pts[k-1][1]));return{pts:pts,cum:cum}})}
+function fillOnly(){strokes=[];redraw();fillLive();fc.clearRect(0,0,W,H);fc.save();glyph(fc,0);fc.globalCompositeOperation='source-in';fc.fillStyle=css('--acc');fc.fillRect(0,0,W,H);fc.restore();
+ show('Yozish tartibi tez orada qo\u2018shiladi','bad',1900,false);busy=true;setTimeout(function(){fc.clearRect(0,0,W,H);busy=false},1900)}
 function part(s,f){if(s.pts.length==1)return s.pts;var L=s.cum[s.cum.length-1]*f,i=1;while(i<s.cum.length-1&&s.cum[i]<L)i++;
  var a=s.pts[i-1],b=s.pts[i],u=Math.min(1,Math.max(0,(L-s.cum[i-1])/((s.cum[i]-s.cum[i-1])||1)));return s.pts.slice(0,i).concat([[a[0]+(b[0]-a[0])*u,a[1]+(b[1]-a[1])*u]])}
-function demo(){if(busy||!paths.length)return;strokes=[];redraw();fillLive();busy=true;toast.className='toast';
+function demo(){if(busy)return;var src=authored();if(!src){fillOnly();return}strokes=[];redraw();fillLive();busy=true;toast.className='toast';
  var id=++demoId,tl=[],t=0,prev=null,spd=.2,st=0,nn=0;
- paths.forEach(function(s){if(prev){var d=Math.hypot(s.pts[0][0]-prev[0],s.pts[0][1]-prev[1]);tl.push({pts:[prev,s.pts[0]],cum:[0,d||1],draw:0,t0:t,t1:t+=260})}
+ src.forEach(function(s){if(prev){var d=Math.hypot(s.pts[0][0]-prev[0],s.pts[0][1]-prev[1]);tl.push({pts:[prev,s.pts[0]],cum:[0,d||1],draw:0,t0:t,t1:t+=260})}
   var L=s.cum[s.cum.length-1],du=s.pts.length==1?260:Math.max(800,L/spd);s.t0=t;s.t1=t+=du;s.draw=1;s.n=++nn;tl.push(s);prev=s.pts[s.pts.length-1]});
  var T=t;
  function line(p){fc.beginPath();if(p.length==1){fc.arc(p[0][0],p[0][1],fw/2,0,7);fc.fill();return}p.forEach(function(q,i){i?fc.lineTo(q[0],q[1]):fc.moveTo(q[0],q[1])});fc.stroke()}
