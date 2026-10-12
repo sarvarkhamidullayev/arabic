@@ -66,7 +66,7 @@ h1{margin:0;font-size:19px;font-weight:800}
   </div>
 </div>
 <div class="sheet" id="sheet"><div class="sheetin"><div class="sh">Harfni tanlang</div><div class="grid" id="grid"></div></div></div>
-<script src="letters.js"></script>
+<script>document.write('<script src="letters.js?v='+Date.now()+'"><\/script>')</script>
 <script>
 var modes=[],L,store={};
 try{store=JSON.parse(localStorage.getItem('harf-mashq'))||{}}catch(e){}
