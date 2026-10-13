@@ -51,11 +51,35 @@ h1{margin:0;font-size:19px;font-weight:800}
 .gi b{font-family:"Noto Naskh Arabic",serif;font-size:30px;line-height:1.3;font-weight:700}
 .gi span{font-size:12px;font-weight:800;color:var(--mute)}
 .gi.on{border-color:var(--acc);background:var(--accbg)}
+.tl{display:flex;gap:8px;align-items:center;min-width:0}
+.top .chip{font-size:12px;padding:5px 9px}
+.qz{position:fixed;inset:0;background:var(--bg);z-index:20;display:none;flex-direction:column;max-width:560px;margin:0 auto;padding:calc(10px + env(safe-area-inset-top,0px)) 12px calc(12px + env(safe-area-inset-bottom,0px))}
+.qz.on{display:flex}
+.qh{display:flex;gap:8px;align-items:center;margin-bottom:10px}
+.qt{display:grid;grid-template-columns:1fr 1fr;gap:6px;flex:1}
+.x{border:1.5px solid var(--line);background:var(--card);color:var(--ink);border-radius:12px;width:44px;height:40px;font-size:18px;cursor:pointer}
+.qb{flex:1;min-height:0;display:flex;flex-direction:column;gap:10px}
+.prog{font-weight:800;color:var(--mute);font-size:14px;text-align:center}
+.card{flex:1;min-height:0;background:var(--card);border:2px solid var(--line);border-radius:18px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:14px;text-align:center;cursor:pointer}
+.big2{font-family:"Noto Naskh Arabic",serif;font-size:clamp(90px,24vh,190px);line-height:1.3;direction:rtl;font-weight:700}
+.hint2{color:var(--mute);font-size:14px;font-weight:700}
+.nm{font-size:28px;font-weight:800}
+.ar{font-family:"Noto Naskh Arabic",serif;direction:rtl;font-weight:700}
+.nm .ar{font-size:36px;margin-left:6px}
+.fm{display:grid;grid-template-columns:1fr 1fr;gap:10px 18px;width:100%}
+.fm div{display:flex;flex-direction:column;align-items:center}
+.fm .ar{font-size:44px;line-height:1.3}
+.fm small{color:var(--mute);font-weight:800;font-size:12px}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.opt.ok{background:var(--ok);border-color:var(--ok);color:#fff}
+.opt.no{background:var(--bad);border-color:var(--bad);color:#fff}
+.qa{display:flex;gap:8px;min-height:50px}
+.qa .btn{flex:1}
 </style>
 </head>
 <body>
 <div class="app">
-  <div class="top"><button class="pick" id="pick"><span class="pa" id="pa"></span><span id="pn"></span><span>▾</span></button><span class="chip" id="cnt">Takror: 0</span></div>
+  <div class="top"><div class="tl"><button class="pick" id="pick"><span class="pa" id="pa"></span><span id="pn"></span><span>▾</span></button><button class="pick" id="qbtn">🧠 Test</button></div><span class="chip" id="cnt">Takror: 0</span></div>
   <div class="tabs" id="tabs"></div>
   <div class="info"><div class="big" id="big"></div><div><h2 id="ttl"></h2><p id="tip"></p></div></div>
   <div class="board" id="board"><canvas id="g"></canvas><canvas id="f"></canvas><canvas id="d"></canvas><div class="toast" id="toast"></div></div>
@@ -65,6 +89,7 @@ h1{margin:0;font-size:19px;font-weight:800}
     <button class="btn main" id="chk">Tekshirish</button>
   </div>
 </div>
+<div class="qz" id="qz"><div class="qh"><div class="qt"><button class="tab on" id="qm1">Kartochkalar</button><button class="tab" id="qm2">Test</button></div><button class="x" id="qx">✕</button></div><div class="qb" id="qbody"></div></div>
 <div class="sheet" id="sheet"><div class="sheetin"><div class="sh">Harfni tanlang</div><div class="grid" id="grid"></div></div></div>
 <script>document.write('<script src="letters.js?v='+Date.now()+'"><\/script>')</script>
 <script>
@@ -208,6 +233,41 @@ function show(msg,cls,ms,clear){toast.textContent=msg;toast.className='toast sho
  setTimeout(function(){toast.className='toast';if(clear){clearAll();busy=false}},ms)}
 new ResizeObserver(function(){layout()}).observe(board);
 window.matchMedia('(prefers-color-scheme:dark)').addEventListener('change',function(){drawGuide();redraw()});
+var qz=document.getElementById('qz'),qbody=document.getElementById('qbody'),qmode=1,deck=[],qi=0,known=0,missed=[],qscore=0;
+function shuf(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),t=a[i];a[i]=a[j];a[j]=t}return a}
+function openQ(m){qz.classList.add('on');setQM(m||qmode)}
+function setQM(m){qmode=m;document.getElementById('qm1').classList.toggle('on',m==1);document.getElementById('qm2').classList.toggle('on',m==2);m==1?startCards(LETTERS):startQuiz()}
+function startCards(list){deck=shuf(list);qi=0;known=0;missed=[];showCard(false)}
+function showCard(back){
+ if(qi>=deck.length){cardsEnd();return}
+ var L=deck[qi],front='<div class="big2">'+L.ar+'</div><div class="hint2">Bu qaysi harf? Aylantirish uchun bosing</div>',
+ bk='<div class="nm">'+L.name+' <span class="ar">'+L.ar+'</span></div><div class="fm">'+L.forms.map(function(f){return '<div><span class="ar">'+f.w+'</span><small>'+f.t+'</small></div>'}).join('')+'</div>';
+ qbody.innerHTML='<div class="prog">'+(qi+1)+' / '+deck.length+'</div><div class="card" id="fc">'+(back?bk:front)+'</div><div class="qa">'+(back?'<button class="btn" id="bad">Bilmayman</button><button class="btn main" id="good">Bilaman</button>':'<button class="btn main" id="flip">Javobni ko\u2018rish</button>')+'</div>';
+ if(back){document.getElementById('good').onclick=function(){known++;qi++;showCard(false)};document.getElementById('bad').onclick=function(){missed.push(L);qi++;showCard(false)}}
+ else{document.getElementById('flip').onclick=document.getElementById('fc').onclick=function(){showCard(true)}}
+}
+function cardsEnd(){
+ qbody.innerHTML='<div class="card"><div class="nm">Natija: '+known+' / '+deck.length+'</div><div class="hint2">'+(missed.length?'Bilmaganlaringiz: '+missed.map(function(x){return x.ar}).join(' '):'Barcha harflarni bilasiz!')+'</div></div><div class="qa">'+(missed.length?'<button class="btn" id="rp">Bilmaganlarni takrorlash</button>':'')+'<button class="btn main" id="rs">Qayta boshlash</button></div>';
+ if(missed.length)document.getElementById('rp').onclick=function(){startCards(missed.slice())};
+ document.getElementById('rs').onclick=function(){startCards(LETTERS)}}
+function startQuiz(){deck=shuf(LETTERS).slice(0,10);qi=0;qscore=0;showQ()}
+function showQ(){
+ if(qi>=deck.length){quizEnd();return}
+ var L=deck[qi],f=L.forms[Math.floor(Math.random()*L.forms.length)],iso=Math.random()<.5,
+ opts=shuf([L].concat(shuf(LETTERS.filter(function(x){return x!==L})).slice(0,3)));
+ qbody.innerHTML='<div class="prog">Savol '+(qi+1)+' / '+deck.length+' \u00b7 Ball: '+qscore+'</div><div class="card"><div class="big2">'+(iso?L.ar:f.w)+'</div><div class="hint2">Bu qaysi harf?'+(iso?'':' ('+f.t.toLowerCase()+' shakli)')+'</div></div><div class="opts">'+opts.map(function(o){return '<button class="btn opt" data-id="'+o.id+'">'+o.name+'</button>'}).join('')+'</div><div class="qa" id="qnx"></div>';
+ [].forEach.call(qbody.querySelectorAll('.opt'),function(b){b.onclick=function(){
+  if(b.disabled)return;if(b.dataset.id===L.id)qscore++;
+  [].forEach.call(qbody.querySelectorAll('.opt'),function(x){x.disabled=true;if(x.dataset.id===L.id)x.classList.add('ok');else if(x===b)x.classList.add('no')});
+  document.getElementById('qnx').innerHTML='<button class="btn main" id="nx">'+(qi+1<deck.length?'Keyingi':'Natija')+'</button>';
+  document.getElementById('nx').onclick=function(){qi++;showQ()}}})}
+function quizEnd(){
+ qbody.innerHTML='<div class="card"><div class="nm">Natija: '+qscore+' / '+deck.length+'</div><div class="hint2">'+(qscore>=deck.length-1?'Ajoyib!':qscore>=deck.length/2?'Yaxshi, yana mashq qiling.':'Kartochkalar bilan takrorlang.')+'</div></div><div class="qa"><button class="btn" id="kc">Kartochkalar</button><button class="btn main" id="rq">Qayta</button></div>';
+ document.getElementById('kc').onclick=function(){setQM(1)};document.getElementById('rq').onclick=startQuiz}
+document.getElementById('qbtn').onclick=function(){openQ()};
+document.getElementById('qm1').onclick=function(){setQM(1)};document.getElementById('qm2').onclick=function(){setQM(2)};
+document.getElementById('qx').onclick=function(){qz.classList.remove('on')};
+if(location.hash.slice(1)==='quiz')openQ(2);
 setLetter(location.hash.slice(1));
 if(document.fonts){document.fonts.load('700 80px "Noto Naskh Arabic"','ا').then(layout).catch(function(){})}
 </script>
